@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LP2</title>
+  <link href="LP2-3.css" rel="stylesheet">
+</head>
+<body>
+  <div class="chapter"><i>Little Prince</i><br>Chapter Ⅱ</div>
+  <div class="total">
+    <div class="cube">
+      <img src="LP_images/boa.png" alt="보아뱀 사진">
+      <img src="LP_images/sheep1.PNG" alt="첫 번째 양 사진">
+      <img src="LP_images/sheep2.PNG" alt="두 번째 양 사진">
+      <img src="LP_images/sheep3.PNG" alt="세 번째 양 사진">
+    </div>
+  </div>
+  <div class="container">
+    <div class="bar">
+      <div class='string'></div>
+    </div>
+</div>
+  <script src='LP2-3.js'></script>
+  <a href = 'LP2-4.html'><div id='button'>Next</div></a>
+  <script>
+    let deg = 0;
+    setInterval(()=>{
+      deg -= 90;
+      document.querySelector(".cube").style.transform
+      ='rotateX(' +deg+ 'deg)';
+    }, 3000)
+  </script>
+</body>
+</html>
